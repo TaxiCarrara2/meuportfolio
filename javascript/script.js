@@ -8,9 +8,9 @@ btnTema.addEventListener('click', function() {
 
     /* Trocar o ícone do botão */
     if (document.body.classList.contains('tema_escuro')) {
-        btnTema.textContent = '☀️';
+        btnTema.textContent = '🌞';
     } else {
-        btnTema.textContent = '🌙';
+        btnTema.textContent = '🌚';
     }
 });
 
