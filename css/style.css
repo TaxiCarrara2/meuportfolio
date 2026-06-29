@@ -1,0 +1,452 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inconsolata", Monaco, monospace;
+    padding-top: 30px;
+}
+
+/* TEMA CLARO / ESCURO */
+
+body.tema_claro {
+    background-color: white;
+    color: black;
+}
+
+body.tema_escuro {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+
+
+/* CABEÇALHO */
+
+header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-sizing: border-box;
+}
+
+header h1 {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+/* MENU NAVEGAÇÃO */
+
+nav {
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+/* Botão de alternar tema claro/escuro */
+#mudar_tema {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+/* PARTE SOBRE MIM */
+
+#sobre_mim {
+    font-size: 0;
+    scroll-margin-top: 70px;
+}
+
+/* Apresentação */
+
+#apresentacao {
+    font-size: 16px;
+    text-align: center;
+    width: 50%;
+    padding-left: 25%;
+    margin-top: 10%;
+}
+
+#apresentacao h2 {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    display: inline;
+    padding: 2px 15px;
+    border: 1px black solid;
+    border-radius: 20px;
+}
+
+#apresentacao h2:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#apresentacao p {
+    font-size: 25px;
+}
+
+/* Hobbies */
+
+#hobbies {
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#hobbies h2 {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    display: inline-flex;
+    padding: 2px 15px;
+    border: 1px black solid;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#hobbies h2:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#hobbies span {
+    border: 1px black solid;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+    width: 22%;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+#hobbies span:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Informações Pessoais */
+
+#info_pessoais {
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    vertical-align: top;
+}
+
+#info_pessoais h2 {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    display: inline-flex;
+    padding: 2px 15px;
+    border: 1px black solid;
+    border-radius: 20px;
+}
+
+#info_pessoais h2:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* PARTE DA FORMAÇÃO */
+
+#formacao {
+    text-align: center;
+    justify-items: center;
+    margin-top: 15%;
+    font-size: 20px;
+    scroll-margin-top: 70px;
+}
+
+#formacao h2 {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    display: inline-flex;
+    padding: 2px 15px;
+    border: 1px black solid;
+    border-radius: 20px;
+}
+
+#formacao h2:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#escolaridade, #idiomas, #complementar {
+    width: 30%;
+    text-align: center;
+    font-size: 15px;
+    border: 1px black solid;
+    background: linear-gradient(135deg, #ffffff, #e8e8e8);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#escolaridade:hover, #idiomas:hover, #complementar:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* SOBRE MIM E FORMAÇÃO - TEMA ESCURO */
+
+body.tema_escuro #escolaridade,
+body.tema_escuro #idiomas,
+body.tema_escuro #complementar {
+    background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+    color: white;
+}
+
+body.tema_escuro #escolaridade h4,
+body.tema_escuro #idiomas h4,
+body.tema_escuro #complementar h4 {
+    color: white;
+}
+
+body.tema_escuro #escolaridade p,
+body.tema_escuro #idiomas p,
+body.tema_escuro #complementar p {
+    color: white;
+}
+
+body.tema_escuro #hobbies span {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+body.tema_escuro #hobbies span:hover {
+    background-color:black;
+    color: white;
+}
+
+body.tema_escuro #hobbies h2,
+body.tema_escuro #info_pessoais h2,
+body.tema_escuro #apresentacao h2,
+body.tema_escuro #formacao h2,
+body.tema_escuro #titulo_contato h2 {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+body.tema_escuro #hobbies h2:hover,
+body.tema_escuro #info_pessoais h2:hover,
+body.tema_escuro #apresentacao h2:hover,
+body.tema_escuro #formacao h2:hover,
+body.tema_escuro #titulo_contato h2:hover {
+    background-color: black;
+    color: white;
+}
+
+/* PARTE DO PORTFÓLIO */
+#portfolio {
+    text-align: center;
+    margin-top: 5%;
+    scroll-margin-top: 70px;
+}
+
+#titulo_portfolio h2 {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    display: inline-flex;
+    padding: 2px 15px;
+    border: 1px black solid;
+    border-radius: 20px;
+}
+
+#titulo_portfolio h2:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#site_portfolio {
+    display: inline-block;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #ffffff, #e8e8e8);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+#site_portfolio:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#site_portfolio h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#site_portfolio p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#tecnologias span {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 3px 12px;
+    font-size: 13px;
+    margin: 3px;
+    display: inline-block;
+}
+
+#site_portfolio a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+#site_portfolio a:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* PORTFOLIO - TEMA ESCURO */
+
+body.tema_escuro #site_portfolio {
+    background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+    color: white;
+}
+
+body.tema_escuro #tecnologias span {
+    border-color: white;
+    color: white;
+}
+
+body.tema_escuro #titulo_portfolio h2 {
+    background-color: white;
+    color: black;
+}
+
+body.tema_escuro #titulo_portfolio h2:hover {
+    background-color: black;
+    color: white;
+}
+
+/* PARTE DO CONTATO */
+
+#contato {
+    text-align: center;
+    margin-top: 15%;
+    scroll-margin-top: 70px;
+    margin-bottom: 15%;
+}
+
+#titulo_contato h2 {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    display: inline-flex;
+    padding: 2px 15px;
+    border: 1px black solid;
+    border-radius: 20px;
+}
+
+#titulo_contato h2:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+#form_contato {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+}
+
+#form_contato label {
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+#form_contato input,
+#form_contato textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+#form_contato textarea {
+    height: 120px;
+    resize: vertical; 
+}
+
+#form_contato button {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#form_contato button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
